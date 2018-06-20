@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "~font-awesome5/css/fontawesome-all.css";
 body {
   font-family: 'Prompt', sans-serif;
   position: relative;
@@ -9,20 +10,46 @@ body {
   background: #f5f5f5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3f3f3f;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.red {
+  color: #ef2c00;
+}
+
+.page-section {
+  padding: 50px 0px;
+}
+
 .owl-theme .owl-controls .owl-buttons div {
   /* color: #FFF; */
   display: inline-block;
   zoom: 1;
   margin: 5px;
-  font-size: 12px;
-  width: 16px;
-  height: 24px;
+  font-size: 35px;
+  width: 14px;
+  height: 36px;
 }
 
 .owl-next {
   color: #ef2c00;
+  right: 1%;
 }
 
 .owl-prev {
   color: #000000;
+  right: 4%;
+}
+
+a:hover {
+  text-decoration: none;
 }

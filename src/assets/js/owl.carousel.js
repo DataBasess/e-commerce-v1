@@ -1497,7 +1497,35 @@ $(document).ready(function () {
     lazyLoad: true,
     autoPlay: true,
     navigation: true,
-    navigationText:['<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>','<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'],
+    navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     pagination: false,
   });
+});
+
+$(document).ready(function () {
+  $("#owl-demo01").owlCarousel({
+    autoPlay: 3000,
+    items: 2,
+    itemsDesktop: [1199, 2],
+    itemsDesktopSmall: [979, 2],
+    itemsTablet: [768, 2],
+    itemsMobile: [479, 1],
+
+
+    // Navigation
+    navigation: false,
+    rewindNav: true,
+    scrollPerPage: false,
+
+
+    //Mouse Events
+    dragBeforeAnimFinish: true,
+    mouseDrag: true,
+    touchDrag: true,
+
+    //Pagination
+    pagination: true,
+    paginationNumbers: false,
+  });
+
 });
