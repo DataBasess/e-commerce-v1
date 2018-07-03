@@ -1,0 +1,62 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+<section class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <app-user-menu></app-user-menu>
+      </div>
+      <div class="col-md-9">
+        <h2 class="page-header">#OderID: azz25546</h2>
+
+        <table class="table table-bordered table-hover toggle-circle table-res">
+          <thead>
+            <tr>
+              <th width="20%" data-toggle="true" align="center" valign="middle" class="text-center">สินค้า</th>
+
+              <th width="20%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">รูปภาพ</th>
+
+
+              <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">สี</th>
+              <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ราคา</th>
+              <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">จำนวน</th>
+              <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ราคารวม</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+
+            <tr *ngFor="let item of list; let i = index;">
+              <td data-label="ITEM" align="left" valign="middle" style="padding:8px;">
+                <a title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" href="product-detail" class="sp-text-body-pink">แบตสำรอง Xiaomi Mi Power Bank 5200mAh</a>
+              </td>
+              <td data-label="IMAGE" align="left" valign="middle" style="padding:8px;">
+                <a title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" href="product-detail" class="sp-text-body-pink">
+                  <img title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" width="100" src="assets/upload/pro0{{i+1}}.jpg">
+                </a>
+              </td>
+              <td data-label="PRICE" align="center" valign="middle" style="padding:8px;">
+                <span class="glyphicon glyphicon-stop" style="color: #ff0000;font-size: 30px;"></span>
+              </td>
+              <td data-label="PRICE" align="center" valign="middle" style="padding:8px;">1000 BTH</td>
+              <td data-label="QUANTITY" align="center" valign="middle" bgcolor="#f5f5f5" style="padding:8px;">
+                1
+              </td>
+              <td data-label="AMOUNT" align="center" valign="middle" class="sp-text-body-pink" style="padding:8px;">
+                <strong style="color: #f00;">1000 BTH</strong>
+              </td>
+
+            </tr>
+
+
+
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

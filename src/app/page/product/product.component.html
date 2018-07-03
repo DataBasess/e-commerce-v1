@@ -1,0 +1,114 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+<section class="page-section">
+  <div class="container">
+
+    <h2 class="text-center">
+      <i aria-hidden="true" class="fas fa-shopping-bag red"></i> สินค้า</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+        <app-category></app-category>
+      </div>
+      <div class="col-md-9">
+
+
+        <div class="category-menu">
+          <ul style="padding-left: 0px;">
+            <!-- change the "cat-1", "cat-2", "cat-3" with your "Categories ID" -->
+            <li class="cat-active" category="prod-cnt">ทั้งหมด</li>
+            <li class="" category="cat-1">ล่าสุด</li>
+            <li class="" category="cat-2">ยอดนิยม</li>
+            <li class="" category="cat-3">สินค้าขายดี</li>
+          </ul>
+        </div>
+        <div class="view-cnt hidden-sm hidden-xs">
+          <div id="list" class="d-grid-h fa fa-th-list" aria-hidden="true"></div>
+          <div id="grid" class="d-grid-h fa fa-th-large" aria-hidden="true"></div>
+        </div>
+        <div class="clear"></div>
+        <hr>
+        <div class="row">
+          <div class="prod-cnt prod-box cat-{{s+1}}" *ngFor="let item of list01; let s = index;">
+
+            <div class="container01" data-hipop="two-horizontal">
+              <span class="label-product label-sale"> new </span>
+              <img class="img-responsive image01" src="assets/upload/pro0{{s+1}}.jpg" alt="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
+              <div class="overlay01">
+                <div class="text01">
+                  <div class="col-xs-6">
+                    <a class="btn-popup1" href="product-detail" title="ดูรายละเอียด">
+                      <i aria-hidden="true" class="fa fa-share"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="btn-popup2" href="add-cart" title="หยิบใส่ตะกร้า">
+                      <i aria-hidden="true" class="fa fa-shopping-basket"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="">
+              <h4 class="detail">
+                แบตสำรอง Xiaomi Mi Power Bank 5200mAh
+              </h4>
+              <div class="price-cnt">
+                <div class="price">
+
+                  <span class="red font20">
+                    <b>฿390.00</b>
+                  </span> &nbsp;
+                  <span class="price-out">฿890.00</span>
+
+                </div>
+              </div>
+
+            </a>
+
+            <div class="price-cnt">
+              <a href="add-cart" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
+                <p class="pull-right">
+                  <i class="fa fa-shopping-basket font20 cart" aria-hidden="true"></i>
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- end e-com box prod-box -->
+
+          <div class="clearfix"></div>
+
+          <div class="col-md-12 text-right">
+            <hr>
+            <ul class="pagination">
+              <li>
+                <a href="#">«</a>
+              </li>
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <a href="#">»</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,206 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+
+<section class="page-section">
+  <div class="container">
+
+    <h2 class="text-center">
+      <i aria-hidden="true" class="fas fa-dollar-sign red"></i> แจ้งชำระเงิน</h2>
+    <br>
+
+
+
+    <div class="row">
+
+      <!-- <div style="width: 100%;height: 2px; border-bottom: 7px double #9FA3AA;"></div> -->
+
+      <div class="clearfix"> </div>
+      <br>
+
+      <div class="col-lg-2 col-md-2 col-sm-2"></div>
+
+
+
+      <div class="col-lg-8 col-md-8 col-sm-8">
+
+
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="row">
+
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+        <form class="wd_contact-from" id="frm_quatation" method="post" action="query_request.php">
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="inv_No" id="inv_No" placeholder="เลขที่ใบสั่งซื้อ">
+
+          </div>
+          <script>
+            $(document).ready(function () {
+              $('#inv_No').on('input', function (e) {
+                var inputV = $(this).val();
+
+
+
+                $.post("inv_Chk.php", {
+                  inv: inputV,
+                  method: "inv_num"
+                }, function (chkInv) {
+                  if (chkInv != "") {
+                    var strChk = chkInv.split("|");
+                    $("#inv_Price").val(strChk[0].trim())
+                    $("#inv_Name").val(strChk[1].trim())
+                  } else {
+                    $("#inv_Price").val("");
+                  }
+                });
+
+
+              });
+            });
+
+          </script>
+
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+
+              <div class="form-group">
+                <input type="Number" class="form-control" name="inv_Price" id="inv_Price" readonly="" placeholder="ยอดเงินที่ต้องชำระ">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="form-group">
+                <input class="form-control" type="text" name="payments_Money" id="payments_Money" placeholder="ยอดเงินที่โอน">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <input type="Name" class="form-control" id="inv_Name" name="member_Name" readonly="" placeholder="Name - Surname">
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="form-group input-group">
+                <span class="input-group-addon">
+                  <i class="far fa-clock" aria-hidden="true"></i>
+                </span>
+                <input type="datetime-local" name="birth" id="birth" class="form-control" required="">
+
+              </div>
+            </div>
+
+          </div>
+
+          <div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="radio" name="account_ID" id="account_ID7" value="7">
+                  <label for="account_ID7">
+                    <img src="assets/images/bank9.png" width="18" height="18" alt="">
+                    <span class="f-400 font16">ธนาคารไทยพาณิชย์</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="radio" name="account_ID" id="account_ID10" value="10">
+                  <label for="account_ID10">
+                    <img src="assets/images/bank6.png" width="18" height="18" alt="">
+                    <span class="f-400 font16">ธนาคารกสิกรไทย</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="radio" name="account_ID" id="account_ID18" value="18">
+                  <label for="account_ID18">
+                    <img src="assets/images/bank10.png" width="18" height="18" alt="">
+                    <span class="f-400 font16">ธนาคารกรุงเทพ</span>
+                  </label>
+                </div>
+              </div>
+
+
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="radio" name="account_ID" id="account_ID7" value="7">
+                  <label for="account_ID7">
+                    <img src="assets/images/bank11.png" width="18" height="18" alt="">
+                    <span class="f-400 font16">ธนาคารกรุงไทย</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="radio" name="account_ID" id="account_ID10" value="10">
+                  <label for="account_ID10">
+                    <img src="assets/images/bank13.png" width="18" height="18" alt="">
+                    <span class="f-400 font16">ธนาคารกรุงศรีอยุธยา</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="radio" name="account_ID" id="account_ID18" value="18">
+                  <label for="account_ID18">
+                    <img src="assets/images/bank12.png" width="18" height="18" alt="">
+                    <span class="f-400 font16">ธนาคารทหารไทย</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            <div class="form-group">
+              <input type="file" class="form-control sp-form d-margin" name="txbFile" value="Browse">
+            </div>
+
+
+
+
+            <img src="assets/images/Captcha-demo.gif" width="280" alt="" style="margin-bottom: 5px;">
+
+
+
+
+            <div class="p-l" style="margin-bottom:20px;">
+
+
+              <input type="submit" class="btn btn-danger" value="ยืนยันส่งข้อมูล" style="margin-top: 5px;">
+              <button type="Reset" class="btn btn-danger" style="margin-top: 5px;">
+                ล้างข้อมูลใหม่</button>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+
+
+          <div class="col-lg-2 col-md-2 col-sm-2"></div>
+
+
+          <div class="clearfix"> </div>
+          <br>
+          <!-- <div style="width: 100%;height: 2px; border-bottom: 7px double #9FA3AA;"></div> -->
+
+          <div class="clearfix"> </div>
+
+
+        </form>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</section>
+
+
+<app-footer></app-footer>

@@ -46,6 +46,20 @@ ul.li-dos03 li:before {
   font-size: 23px;
 }
 
+.w3l-grids-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 33px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
 @media (min-width:240px) and (max-width:768px) {
   #bg-footer {
     background-color: #ef2c00;

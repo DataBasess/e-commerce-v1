@@ -1,0 +1,110 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+<section class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+
+      <div class="col-md-8">
+        <h4>
+          <i class="fas fa-edit red"></i> สร้างบัญชี
+          <br class="visible-xs">
+          <span class="pull-right" style="font-size: 14px;"> เป็นสมาชิกอยู่แล้วหรือ?
+            <a href="login" class="red"> เข้าสู่ระบบ </a>ที่นี่</span>
+        </h4>
+
+
+
+        <br>
+        <div class="thumbnail">
+          <br>
+          <div class="clearfix"></div>
+          <div class="col-md-6">
+
+
+
+
+            <form class="wd_contact-from" id="frm_quatation" method="post" action="query_request">
+
+
+              <div class="form-group">
+                <input name="quotation_Email" type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="form-group">
+                    <input name="quotation_Email" type="date" class="form-control" placeholder="วันเกิด">
+                    <span style="color: #f00;">* วันเกิด</span>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-group">
+
+
+                    <select class="form-control">
+                      <option id="sex" selected="" value="hide"> เลือก </option>
+                      <option value="01">ชาย</option>
+                      <option value="02">หญิง</option>
+                    </select>
+
+                    <span style="color: #f00;">* เพศ</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <input name="quotation_Email" type="email" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="form-group">
+                <input name="quotation_Fax" type="text" class="form-control" placeholder="รหัสผ่าน / Password">
+                <span style="color: #f00;">* อย่างน้อย 6 ตัวอักษร รวมทั้งตัวเลข</span>
+              </div>
+              <div class="form-group">
+                <input name="quotation_Mobile" type="text" class="form-control" placeholder="ยืนยันรหัสผ่าน / Confirm Password  ">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value=""> การคลิกที่ปุ่ม สมัครสมาชิก ถือว่าท่านต้องการรับข้อเสนอ ข้อกำหนดและเงื่อนไขของทางร้าน</label>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="p-l" style="margin-bottom:20px;">
+                <input type="submit" class="btn btn-danger" value="ยืนยัน" style="margin-top: 5px;">
+                <button type="Reset" class="btn btn-danger" style="margin-top: 5px;">ล้างข้อมูล</button>
+              </div>
+            </form>
+
+
+          </div>
+          <div class="col-md-6">
+
+
+            <div class="text-center">
+              <h6>หรือ เชื่อมต่อกับบัญชีออนไลน์</h6>
+
+              <a href="" class="btn btn-info btn-lg">
+                <i class="fab fa-facebook-f"></i> Facebook</a>
+
+              <div class="clearfix"></div>
+              <br>
+              <a href="" class="btn btn-warning btn-lg">
+                <i class="fab fa-google-plus-g"></i> Google</a>
+            </div>
+            <br>
+          </div>
+
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+
+
+
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

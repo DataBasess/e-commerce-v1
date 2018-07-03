@@ -26,12 +26,18 @@
       "assets/css/d-text.css",
       "assets/engine1/style.css",
       "assets/css/owl.carousel.css",
+      "assets/css/jquery-ui1.css",
+      "assets/css/magiczoomplus.css",
+      "assets/css/dos-bt.css",
+      "assets/css/dos-grid.css",
+      "assets/css/swipebox.css",
       "styles.scss"
     ],
     "scripts": [
       "../node_modules/jquery/dist/jquery.min.js",
       "assets/js/bootstrap.min.js",
       "assets/js/bootsnav.js"
+
     ],
     "environmentSource": "environments/environment.ts",
     "environments": {

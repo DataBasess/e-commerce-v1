@@ -1,0 +1,62 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+<section class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <app-user-menu></app-user-menu>
+      </div>
+      <div class="col-md-9">
+        <h2 class="page-header">แก้ไขข้อมูลส่วนตัว</h2>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <form action="query_request" class="wd_contact-from" id="frm_quatation" method="post">
+
+
+            <div class="form-group">
+              <input class="form-control" name="quotation_Email" placeholder="ชื่อ-นามสกุล" type="text">
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-7">
+                <div class="form-group">
+                  <input class="form-control" name="quotation_Email" placeholder="วันเกิด" type="date">
+                  <span style="color: #f00;">* วันเกิด</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+
+
+                  <select class="form-control">
+                    <option id="sex" selected="" value="hide"> เลือก </option>
+                    <option value="01">ชาย</option>
+                    <option value="02">หญิง</option>
+                  </select>
+
+                  <span style="color: #f00;">* เพศ</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="ที่อยู่" required="required" style="height: 150px;"></textarea>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="p-l" style="margin-bottom:20px;">
+              <input class="btn btn-danger" style="margin-top: 5px;" type="submit" value="ยืนยัน">
+              <button class="btn btn-danger" style="margin-top: 5px;" type="Reset">ล้างข้อมูล</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

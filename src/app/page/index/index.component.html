@@ -1,70 +1,89 @@
 <app-header></app-header>
 <app-slide></app-slide>
 
+
+
 <section class="page-section">
   <div class="container">
     <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h1 class="text-center text-uppercase h3" style="color: #222222;">
+          <span class="red">Welcome</span> to our Site</h1>
 
+        <p class="text-center">เว็บไซต์พร้อมใช้ระบบเว็บในรูปแบบเว็บเทมเพลต ออกแบบเว็บไซต์สำเร็จรูปให้สวยงาม มีเอกลักษณ์ เหมาะกับทุกธุรกิจ รองรับการแสดงผล
+          ทุกหน้าจอ ทุกอุปกรณ์ 100% รับออกแบบเว็บไซต์และพัฒนาระบบเว็บ บริการรับทำเว็บไซต์ ออกแบบเว็บไหม่ แบบครบวงจร เว็บไซต์ดูดี
+          เว็บสวยงาม ทันสมัย มีเอกลักษณ์เหมาะกับธุรกิจคุณ ออกแบบเว็บไซต์ตามความต้องการของลูกค้า รองรับการทำงานของ SEO(Search
+          Engine Optimization)
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="clearfix"></div>
+
+      <hr>
 
       <div class="col-md-3">
-
+        <app-category></app-category>
       </div>
 
       <div class="col-md-9">
 
         <div class="f-products">
-          <h2>
+          <h2 class="marginbot20">
             <span class="glyphicon glyphicon-chevron-right red" aria-hidden="true"></span> สินค้ายอดนิยม</h2>
           <!-- start content_slider -->
           <div class="row">
-            <div id="owl-demo" class="owl-carousel text-center">
+            <div id="owl-demo" class="owl-carousel">
 
               <div class="item" *ngFor="let item of list; let i = index;">
-                <div class="col-md-12">
-                  <div class="container01" data-hipop="two-horizontal">
-                    <span class="label-product label-sale"> -33%  </span>
-                    <img class="img-responsive image01" src="assets/upload/pro0{{i+1}}.jpg" alt="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
-                    <div class="overlay01">
-                      <div class="text01">
-                        <div class="col-xs-6">
-                          <a class="btn-popup1" href="" title="ดูรายละเอียด">
-                            <i aria-hidden="true" class="fa fa-share"></i>
-                          </a>
-                        </div>
-                        <div class="col-xs-6">
-                          <a class="btn-popup2" href="" title="หยิบใส่ตะกร้า">
-                            <i aria-hidden="true" class="fa fa-shopping-basket"></i>
-                          </a>
+                <div class="col-xs-12">
+                  <div class="prod-cnt prod-box" style="width: 100%;margin: 0px;">
+
+                    <div class="container01" data-hipop="two-horizontal">
+                      <span class="label-product label-sale"> new </span>
+                      <img class="img-responsive image01" src="assets/upload/pro0{{i+1}}.jpg" alt="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
+                      <div class="overlay01">
+                        <div class="text01">
+                          <div class="col-xs-6">  
+                            <a class="btn-popup1" href="product-detail" title="ดูรายละเอียด">
+                              <i aria-hidden="true" class="fa fa-share"></i>
+                            </a>
+                          </div>
+                          <div class="col-xs-6">
+                            <a class="btn-popup2" href="add-cart" title="หยิบใส่ตะกร้า">
+                              <i aria-hidden="true" class="fa fa-shopping-basket"></i>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="text-left">
                     <a href="">
-                      <h4>แบตสำรอง Xiaomi Mi Power Bank 5200mAh
-
+                      <h4 class="detail">
+                        แบตสำรอง Xiaomi Mi Power Bank 5200mAh
                       </h4>
+                      <div class="price-cnt">
+                        <div class="price">
+
+                          <span class="red font20">
+                            <b>฿390.00</b>
+                          </span> &nbsp;
+                          <span class="price-out">฿890.00</span>
+
+                        </div>
+                      </div>
+
                     </a>
 
-                    <div class="ratings">
-                      <a href="">
+                    <div class="price-cnt">
+                      <a href="add-cart" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
                         <p class="pull-right">
                           <i class="fa fa-shopping-basket font20 cart" aria-hidden="true"></i>
                         </p>
                       </a>
-                      <p>
-                        <span class="red font20">
-                          <b>฿390.00</b>
-                        </span> &nbsp;
-                        <span class="price-out">฿890.00</span>
-                      </p>
                     </div>
-
                   </div>
-
                 </div>
               </div>
-
 
 
 
@@ -84,13 +103,13 @@
 
           <div class="row">
 
-            <div class="col-md-4" *ngFor="let item of list01; let s = index;">
+            <!-- <div class="col-md-4 col-sm-6" *ngFor="let item of list01; let s = index;">
               <div class="container01" data-hipop="two-horizontal">
                 <img class="img-responsive image01" src="assets/upload/pro0{{s+1}}.jpg" alt="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
                 <div class="overlay01">
                   <div class="text01">
                     <div class="col-xs-6">
-                      <a class="btn-popup1" href="" title="ดูรายละเอียด">
+                      <a class="btn-popup1" href="product-detail" title="ดูรายละเอียด">
                         <i aria-hidden="true" class="fa fa-share"></i>
                       </a>
                     </div>
@@ -107,7 +126,6 @@
                   <h4>แบตสำรอง Xiaomi Mi Power Bank 5200mAh
                   </h4>
                 </a>
-
                 <div class="ratings">
                   <a href="">
                     <p class="pull-right">
@@ -121,17 +139,61 @@
                     <span class="price-out">฿890.00</span>
                   </p>
                 </div>
-
               </div>
+            </div>-->
 
+
+            <div class="prod-cnt prod-box" *ngFor="let item of list01; let s = index;">
+
+              <div class="container01" data-hipop="two-horizontal">
+                <span class="label-product label-sale"> new </span>
+                <img class="img-responsive image01" src="assets/upload/pro0{{s+1}}.jpg" alt="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
+                <div class="overlay01">
+                  <div class="text01">
+                    <div class="col-xs-6">
+                      <a class="btn-popup1" href="product-detail" title="ดูรายละเอียด">
+                        <i aria-hidden="true" class="fa fa-share"></i>
+                      </a>
+                    </div>
+                    <div class="col-xs-6">
+                      <a class="btn-popup2" href="add-cart" title="หยิบใส่ตะกร้า">
+                        <i aria-hidden="true" class="fa fa-shopping-basket"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="">
+                <h4 class="detail">
+                  แบตสำรอง Xiaomi Mi Power Bank 5200mAh
+                </h4>
+                <div class="price-cnt">
+                  <div class="price">
+
+                    <span class="red font20">
+                      <b>฿390.00</b>
+                    </span> &nbsp;
+                    <span class="price-out">฿890.00</span>
+
+                  </div>
+                </div>
+
+              </a>
+
+              <div class="price-cnt">
+                <a href="add-cart" title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh">
+                  <p class="pull-right">
+                    <i class="fa fa-shopping-basket font20 cart" aria-hidden="true"></i>
+                  </p>
+                </a>
+              </div>
             </div>
+            <!-- end e-com box prod-box -->
+
+
 
           </div>
-
-
         </div>
-
-
       </div>
     </div>
   </div>
@@ -167,7 +229,7 @@
                 <p>มือไม้มันก็จะสั่นๆนะเทออกับงาน CPS CHAPS End of Season Sale 50% ที่ลดแบบใจหายขนมาให้ช้อปมากมายทั้ง เสื้อผ้า
                   กระเป๋า กางเกง เข็มขัด หมวก และอีกเพียบ เห็นแล้วก็อยากได้นู้นอยากได้นี่กันเต็มไปหมด!!!</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="new" title="50% Offer"></a>
             </figure>
           </div>
 

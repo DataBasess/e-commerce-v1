@@ -1,0 +1,297 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+<section class="page-section">
+  <div class="container">
+    <table class="table table-bordered table-hover toggle-circle table-res">
+      <thead>
+        <tr>
+          <th width="20%" data-toggle="true" align="center" valign="middle" class="text-center">สินค้า</th>
+          <th width="30%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">รูปภาพ</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">สี</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ราคา</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">จำนวน</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ราคารวม</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ลบ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of list; let i = index;">
+          <td data-label="ITEM" align="left" valign="middle" style="padding:8px">
+            <a title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" href="product-detail" class="sp-text-body-pink">แบตสำรอง Xiaomi Mi Power Bank 5200mAh</a>
+            <br>
+            <span class="black">
+              <b>#OderID: azz25546</b>
+            </span>
+          </td>
+          <td data-label="IMAGE" align="left" valign="middle" style="padding:8px">
+            <a title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" href="product-detail" class="sp-text-body-pink">
+              <img title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" width="100" src="assets/upload/pro0{{i+1}}.jpg">
+            </a>
+          </td>
+          <td data-label="PRICE" align="center" valign="middle" style="padding:8px">
+            <span class="glyphicon glyphicon-stop" style="color:#f00;font-size:30px"></span>
+          </td>
+          <td data-label="PRICE" align="center" valign="middle" style="padding:8px">1000 BTH</td>
+          <td data-label="QUANTITY" align="left" valign="middle" bgcolor="#f5f5f5" style="padding:8px">
+            <input type="Number" class="form-control sp-form" id="" placeholder="1">
+          </td>
+          <td data-label="AMOUNT" align="center" valign="middle" class="sp-text-body-pink" style="padding:8px">
+            <strong style="color:#f00">1000 BTH</strong>
+          </td>
+          <td data-label="REMOVE" align="center" valign="middle" style="padding:8px">
+            <button class="glyphicon glyphicon-trash" style="padding:10px;font-size:20px"></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="clearfix" style="margin-bottom:10px"></div>
+    <div style="margin-bottom:10px;text-align:right">
+      <div class="wd_total" style="margin-bottom:20px">
+        <span class="shopping-bag">SHOPPING BAG :
+          <strong>20 ITEM</strong>
+        </span>
+        <br clear="visible-xs"> &nbsp;&nbsp; &nbsp; &nbsp;
+        <span> TOTAL :
+          <strong>3,000 BTH</strong>
+        </span>
+      </div>
+    </div>
+    <table class="table table-bordered table-hover toggle-circle table-res">
+      <tbody class="">
+        <tr>
+          <th colspan="2" align="left" valign="middle" bgcolor="#000">ช่องทางการชำระเงิน</th>
+        </tr>
+        <tr>
+          <td width="100%" align="left" valign="middle" style="padding:8px;border-right:1px #ddd solid">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-6">
+                  <strong style="color:#f00;font-size:18px">**ชำระผ่านบัญชีธนาคาร</strong>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">
+                      <img src="images/bank9.png" width="30" alt="">
+                      <span class="sp-text-body">ธนาคารไทยพาณิชย์</span>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">
+                      <img src="images/bank6.png" width="30" alt="">
+                      <span class="sp-text-body">ธนาคารกสิกรไทย</span>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">
+                      <img src="images/bank10.png" width="30" alt="">
+                      <span class="sp-text-body">ธนาคารกรุงเทพ</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <strong style="color:#f00;font-size:18px">**ชำระผ่านบัตรเครดิต</strong>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">
+                      <img src="images/pay01.png" width="50" alt="">
+                      <span class="sp-text-body">VISA</span>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">
+                      <img src="images/pay02.png" width="50" alt="">
+                      <span class="sp-text-body">MasterCard</span>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">
+                      <img src="images/pay06.png" width="50" alt="">
+                      <span class="sp-text-body">Paypal</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <table class="table table-bordered table-hover toggle-circle table-res">
+      <tbody class="">
+        <tr>
+          <th align="left" valign="middle" bgcolor="#000">การจักส่ง</th>
+        </tr>
+        <tr>
+          <td align="left" valign="middle" style="padding:8px">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <strong style="color:#f00;font-size:18px">**ที่อยู่จัดส่ง</strong>
+                <form class="wd_contact-from" id="frm_quatation" method="post" action="query_request">
+                  <div class="form-group">
+                    <input name="quotation_Email" type="email" class="form-control" id="" placeholder="ชื่อ-นามสกุล">
+                  </div>
+                  <div class="form-group">
+                    <input name="quotation_Email" type="email" class="form-control" id="" placeholder="เบอร์โทรศัพย์">
+                  </div>
+                  <div class="form-group">
+                    <input name="quotation_Email" type="email" class="form-control" id="" placeholder="อีเมล์">
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-group">
+                        <input name="quotation_Email" type="email" class="form-control" id="" placeholder="ที่อยู่">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-group">
+                        <select class="form-control" id="sel1">
+                          <option value="">จังหวัด</option>
+                          <option value="49">กระบี่</option>
+                          <option value="1">กรุงเทพฯ</option>
+                          <option value="14">กาญจนบุรี</option>
+                          <option value="66">กาฬสินธ์</option>
+                          <option value="41">กำแพงเพชร</option>
+                          <option value="65">ขอนแก่น</option>
+                          <option value="27">จันทบุรี</option>
+                          <option value="24">ฉะเชิงเทรา</option>
+                          <option value="25">ชลบุรี</option>
+                          <option value="7">ชัยนาท</option>
+                          <option value="64">ชัยภูมิ</option>
+                          <option value="44">ชุมพร</option>
+                          <option value="29">เชียงราย</option>
+                          <option value="30">เชียงใหม่</option>
+                          <option value="51">ตรัง</option>
+                          <option value="28">ตราด</option>
+                          <option value="39">ตาก</option>
+                          <option value="21">นครนายก</option>
+                          <option value="15">นครปฐม</option>
+                          <option value="63">นครพนม</option>
+                          <option value="72">นครราชสีมา</option>
+                          <option value="50">นครศรีธรรมราช</option>
+                          <option value="5">นครสวรรค์</option>
+                          <option value="3">นนทบุรี</option>
+                          <option value="56">นราธิวาส</option>
+                          <option value="33">น่าน</option>
+                          <option value="73">บุรีรัมย์</option>
+                          <option value="2">ปทุมธานี</option>
+                          <option value="20">ประจวบคีรีขันธ์</option>
+                          <option value="22">ปราจีนบุรี</option>
+                          <option value="55">ปัตตานี</option>
+                          <option value="32">พะเยา</option>
+                          <option value="47">พังงา</option>
+                          <option value="52">พัทลุง</option>
+                          <option value="42">พิจิตร</option>
+                          <option value="40">พิษณุโลก</option>
+                          <option value="19">เพชรบุรี</option>
+                          <option value="43">เพชรบูรณ์</option>
+                          <option value="36">แพร่</option>
+                          <option value="48">ภูเก็ต</option>
+                          <option value="68">มหาสารคาม</option>
+                          <option value="67">มุกดาหาร</option>
+                          <option value="31">แม่ฮ่องสอน</option>
+                          <option value="70">ยโสธร</option>
+                          <option value="57">ยะลา</option>
+                          <option value="69">ร้อยเอ็ด</option>
+                          <option value="45">ระนอง</option>
+                          <option value="26">ระยอง</option>
+                          <option value="16">ราชบุรี</option>
+                          <option value="8">ลพบุรี</option>
+                          <option value="34">ลำปาง</option>
+                          <option value="35">ลำพูน</option>
+                          <option value="59">เลย</option>
+                          <option value="75">ศรีสะเกษ</option>
+                          <option value="62">สกลนคร</option>
+                          <option value="54">สงขลา</option>
+                          <option value="53">สตูล</option>
+                          <option value="4">สมุทรปราการ</option>
+                          <option value="18">สมุทรสงคราม</option>
+                          <option value="17">สมุทรสาคร</option>
+                          <option value="23">สระแก้ว</option>
+                          <option value="11">สระบุรี</option>
+                          <option value="9">สิงหบุรี</option>
+                          <option value="38">สุโขทัย</option>
+                          <option value="13">สุพรรณบุรี</option>
+                          <option value="46">สุราษฎร์ธานี</option>
+                          <option value="74">สุรินทร์</option>
+                          <option value="58">หนองคาย</option>
+                          <option value="60">หนองบัวลำภู</option>
+                          <option value="12">อยุธยา</option>
+                          <option value="10">อ่างทอง</option>
+                          <option value="71">อำนาจเจริญ</option>
+                          <option value="61">อุดรธานี</option>
+                          <option value="37">อุตรดิตถ์</option>
+                          <option value="6">อุทัยธานี</option>
+                          <option value="76">อุบลราชธานี</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                      <div class="form-group">
+                        <select class="form-control" id="sel1">
+                          <option value="">อำเภอ</option>
+                          <option value="1">อำเภอ</option>
+                          <option value="2">อำเภอ</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                      <div class="form-group">
+                        <select class="form-control" id="sel1">
+                          <option value="">ตำบล</option>
+                          <option value="1">ตำบล</option>
+                          <option value="2">ตำบล</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                      <div class="form-group">
+                        <input name="quotation_Email" type="email" class="form-control" id="" placeholder="รหัสไปรษณีย์">
+                      </div>
+                    </div>
+                  </div>
+                  <textarea class="form-control" name="quotation_Address" id="message" placeholder="รายละเอียดเพิ่มเติม" style="height:150px"></textarea>
+                </form>
+                <div class="clearfix" style="margin-bottom:10px"></div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="clearfix"></div>
+                <br>
+                <div style="padding:0;margin-bottom:5px">
+                  <input type="radio" class="sp-form" value="1">
+                  <span class="sp-text-body">จัดส่งตามที่อยู่ที่สมัครสมาชิกไว้</span>
+                </div>
+                <div style="padding:0;margin-bottom:20px">
+                  <input type="radio" class="sp-form" value="1">
+                  <span class="sp-text-body"> จัดส่งตามที่อยู่ใหม่ </span>
+                </div>
+                <strong style="color:#f00">**เมื่อทำรายการสั่งซื้อเสร็จเรียบร้อยแล้ว กรุณารอทาง oilitsme.com
+                  <br> แจ้งราคา + ค่าจัดส่งสินค้า ทางอีเมล์ที่สมัครสมาชิกไว้
+                  <br>
+                </strong>
+                หากท่านไม่ได้รับการแจ้งราคาจัดส่งสินค้ากรุณา ติดต่อที่นี่
+                <br>หรือโทร. 02-000-0000, 02-000-0000, 02-000-0000, 02-000-0000
+                <br> E-Mail. info@oilitsme.com
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="wd_total-btn text-right">
+      <br>
+      <a title="" href="add-cart">
+        <button type="submit" class="btn btn-danger" style="">Edit Order</button>
+      </a>
+      <a title="" href="order-confirmation">
+        <button type="Reset" class="btn btn-danger" style="">Confirm</button>
+      </a>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

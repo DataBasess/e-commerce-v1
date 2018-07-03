@@ -16,18 +16,88 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3f3f3f;
+  color: #000000;
   margin: 0 0 15px 0;
   letter-spacing: 1px;
   font-weight: 400;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 .red {
   color: #ef2c00;
 }
 
+.black {
+  color: #000000;
+}
+
+a:hover,
+a:focus {
+  color: #ef2c00;
+  text-decoration: none;
+}
+
+.icon {
+  border: 1px solid #ef2c00 !important;
+  border-radius: 100% !important;
+  padding: 10px;
+  width: 65px;
+  height: 65px;
+}
+
+.btn {
+  border-radius: 0px;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  width: 80%;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #ef2c00;
+  border-color: #ef2c00;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #ef2c00;
+  border-color: #ef2c00;
+}
+
 .page-section {
   padding: 50px 0px;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 0px 0 20px;
+  border-bottom: 1px solid #eee;
 }
 
 .owl-theme .owl-controls .owl-buttons div {
@@ -52,4 +122,102 @@ h6 {
 
 a:hover {
   text-decoration: none;
+}
+
+#owl-demo02 .owl-prev {
+  color: #ffffff;
+  background: #000000;
+  margin: 0px;
+  padding: 5px;
+  font-size: 25px;
+  width: 25px;
+  height: 35px;
+  right: 10%;
+}
+
+#owl-demo02 .owl-next {
+  color: #ffffff;
+  background: #ef2c00;
+  margin: 0px;
+  padding: 5px;
+  font-size: 25px;
+  width: 25px;
+  height: 35px;
+}
+
+#owl-demo02 .item {
+  margin: 5px;
+}
+
+.scrollToTop {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+  text-indent: -9999px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+  background: #ef2c00 url('../src/assets/images/nav-top.png') no-repeat 50% 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 20px 20px -20px #111;
+  -webkit-box-shadow: 0px 20px 20px -20px #111;
+  box-shadow: 0px 20px 20px -20px #111;
+  border: 2px solid #fff;
+  -webkit-animation: movescale 2s infinite ease-in-out;
+  -moz-animation: movescale 2s infinite ease-in-out;
+  -o-animation: movescale 2s infinite ease-in-out;
+  animation: movescale 2s infinite ease-in-out;
+  /*-webkit-animation: swing 10s ease-in-out 5s infinite;
+  -moz-animation: swing 10s ease-in-out 5s infinite;
+  -o-animation: swing 10s ease-in-out 5s infinite;
+  animation: swing 10s ease-in-out 5s infinite;
+  
+  -webkit-transform-origin: top top;
+  -moz-transform-origin: top top;
+  -o-transform-origin: top top;
+  transform-origin: top top;*/
+}
+
+.scrollToTop:hover {
+  text-decoration: none;
+  background-color: #000000;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #ef2c00;
+  border-color: #ef2c00;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #ef2c00;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }

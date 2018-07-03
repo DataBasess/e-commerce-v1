@@ -1,0 +1,23 @@
+.btn-warning {
+  color: #fff;
+  background-color: #d34836;
+  border-color: #d34836;
+}
+
+.btn-warning :hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.btn-info :hover {
+  color: #fff;
+  background-color: #3664c5;
+  border-color: #3664c5;
+}

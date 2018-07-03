@@ -1,0 +1,114 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+<section class="page-section">
+
+  <div class="container">
+
+    <table class="table table-bordered table-hover toggle-circle table-res">
+      <thead>
+        <tr>
+          <th width="20%" data-toggle="true" align="center" valign="middle" class="text-center">สินค้า</th>
+
+          <th width="30%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">รูปภาพ</th>
+
+
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">สี</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ราคา</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">จำนวน</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ราคารวม</th>
+          <th width="10%" data-hide="phone, tablet" align="center" valign="middle" class="text-center">ลบ</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+
+        <tr *ngFor="let item of list; let i = index;">
+          <td data-label="ITEM" align="left" valign="middle" style="padding:8px;">
+            <a title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" href="product-detail" class="sp-text-body-pink">แบตสำรอง Xiaomi Mi Power Bank 5200mAh</a>
+            <br>
+            <span class="black">
+              <b>#OderID: azz25546</b>
+            </span>
+          </td>
+          <td data-label="IMAGE" align="left" valign="middle" style="padding:8px;">
+            <a title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" href="product-detail" class="sp-text-body-pink">
+              <img title="แบตสำรอง Xiaomi Mi Power Bank 5200mAh" width="100" src="assets/upload/pro0{{i+1}}.jpg">
+            </a>
+          </td>
+          <td data-label="PRICE" align="center" valign="middle" style="padding:8px;">
+            <span class="glyphicon glyphicon-stop" style="color: #ff0000;font-size: 30px;"></span>
+          </td>
+          <td data-label="PRICE" align="center" valign="middle" style="padding:8px;">1000 BTH</td>
+          <td data-label="QUANTITY" align="left" valign="middle" bgcolor="#f5f5f5" style="padding:8px;">
+            <input type="Number" class="form-control sp-form" id="" placeholder="1">
+          </td>
+          <td data-label="AMOUNT" align="center" valign="middle" class="sp-text-body-pink" style="padding:8px;">
+            <strong style="color: #f00;">1000 BTH</strong>
+          </td>
+          <td data-label="REMOVE" align="center" valign="middle" style="padding:8px;">
+
+            <button class="glyphicon glyphicon-trash" style="padding:10px; font-size:20px;"></button>
+          </td>
+        </tr>
+
+
+
+      </tbody>
+    </table>
+
+
+    <!--<script>
+    var theadTitle = new Array();
+    $("table.table-res").find("thead").find("th").each(function(keyloop,valloop){
+        theadTitle.push($(valloop).text());
+    });
+    $("table.table-res").find("tbody").find("tr").each(function(keyloop,valloop){
+        $(valloop).find("td").each(function(key,val){
+            $(val).attr({"data-label":theadTitle[key]});
+            console.log($(val).text());
+        });
+    });
+  </script>-->
+
+    <div class="clearfix" style="margin-bottom: 20px;"></div>
+
+
+    <div class="row" style="text-align: right;">
+      <div class="col-lg-12" style="margin-bottom: 10px;">
+
+
+
+        <div class="wd_total">
+
+          <span class="shopping-bag">SHOPPING BAG :
+            <strong>20 ITEM</strong>
+          </span> &nbsp;&nbsp; &nbsp; &nbsp;
+          <span>TOTAL :
+            <strong>3,000 BTH</strong>
+          </span>
+        </div>
+      </div>
+      <div class="wd_total-btn">
+        <div class="col-lg-12" style="margin-bottom: 20px;">
+
+
+          <a title="" href="product">
+            <button type="submit" class="btn btn-danger" style="">Back</button>
+          </a>
+
+          <a title="" href="order-confirmation">
+            <button type="Reset" class="btn btn-danger" style="">Confirmation</button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</section>
+<app-footer></app-footer>

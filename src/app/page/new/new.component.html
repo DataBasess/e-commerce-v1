@@ -1,0 +1,66 @@
+<app-header></app-header>
+<app-navigator></app-navigator>
+
+<section class="page-section">
+  <div class="container">
+
+    <h2 class="text-center">
+      <i aria-hidden="true" class="fas fa-newspaper red"></i> ข่าวสาร/กิจกรรม</h2>
+
+    <div class="row">
+      <div class="col-sm-6 col-xs-12" *ngFor="let item of list; let i = index;">
+        <figure class="snip1477">
+          <img class="img-responsive image01" src="assets/upload/pm0{{i+1}}.jpg" alt="50% Offer" title="50% Offer">
+          <div class="title">
+            <div>
+              <h2>50% Offer</h2>
+              <h4>2017-11-22 17:55:31</h4>
+            </div>
+          </div>
+          <figcaption>
+            <p>มือไม้มันก็จะสั่นๆนะเทออกับงาน CPS CHAPS End of Season Sale 50% ที่ลดแบบใจหายขนมาให้ช้อปมากมายทั้ง เสื้อผ้า กระเป๋า
+              กางเกง เข็มขัด หมวก และอีกเพียบ เห็นแล้วก็อยากได้นู้นอยากได้นี่กันเต็มไปหมด!!!</p>
+          </figcaption>
+          <a href="new-detail"></a>
+        </figure>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="clearfix"></div>
+
+    <div class="text-center">
+      <ul class="pagination">
+        <li>
+          <a href="#">«</a>
+        </li>
+        <li class="active">
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">5</a>
+        </li>
+        <li>
+          <a href="#">»</a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<app-footer></app-footer>
